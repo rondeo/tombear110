@@ -1,0 +1,56 @@
+$icon-prefix: 'icon-';
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/ag-icon.eot?180103');
+  src:  url('../font/ag-icon.eot?180103#iefix') format('embedded-opentype'),
+    url('../font/ag-icon.ttf?180103') format('truetype'),
+    url('../font/ag-icon.woff?180103') format('woff'),
+    url('../font/ag-icon.svg?180103#ag-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tiger-icon{
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.#{$icon-prefix}loading{
+  animation: laoding 1.5s linear infinite;
+  &:before {
+    content: "\e95a";
+  }
+}
+.#{$icon-prefix}news:before {
+  content: "\e96f";
+}
+.#{$icon-prefix}news-fill:before {
+  content: "\e970";
+}
+.#{$icon-prefix}delete:before {
+  content: "\e932";
+}
+.#{$icon-prefix}delete-fill:before {
+  content: "\e933";
+}
+.#{$icon-prefix}clock:before {
+  content: "\e92c";
+}
+.#{$icon-prefix}clock-fill:before {
+  content: "\e92d";
+}
+
+@keyframes laoding {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
