@@ -5,7 +5,7 @@ function resolve (dir) {
 
 module.exports = {
     title: 'Tiger UI',
-    base: '/tiger-ui/',
+    base: '/',
     description: 'Tiger UI Document',
     head: [
         ['link', { rel: 'shortcut icon', href: '/favicon.ico' }]
